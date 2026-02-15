@@ -93,15 +93,15 @@ The extension will automatically scan the page and apply the blur effect to all 
 
 #### Screenshots (Add at least 3)
 
-![Screenshot1]![alt text](<../../Pictures/Screenshots/Screenshot 2026-02-15 093627.png>)
+![Screenshot1] [https://drive.google.com/file/d/1ZcEQUVPYAtha7M5sO3xGcWT8tBqt8RE2/view?usp=sharing]
 Extension Management & Installation
 This shows the GhostSync extension successfully loaded into the Chrome Extensions manager using the "Load Unpacked" developer feature. It confirms the background service worker is active and ready to monitor page content.
 
-![Screenshot2]![alt text](<../../Pictures/Screenshots/Screenshot 2026-02-15 093642.png>)
+![Screenshot2] [https://drive.google.com/file/d/1lQ_LUpJiwEqwn_D7qlaXGTbVhS4Y1uq7/view?usp=sharing]
 Automatic Real-Time Blurring
 A demonstration of the extension's core functionality on a live webpage. GhostSync automatically identifies sensitive contact information, such as the institution's primary email address, and applies a secure CSS blur filter instantly upon page load.
 
-![Screenshot3]![alt text](<../../Pictures/Screenshots/Screenshot 2026-02-15 093717.png>)
+![Screenshot3] [https://drive.google.com/file/d/1qxro1JEbsz1G-v8rbHZ_v0toutbtAmFq/view?usp=sharing]
 Selective Unblurring (Hover-to-Reveal)
 This screenshot highlights the user-friendly "Hover-to-Reveal" feature. While the main email address remains masked for security, the user has hovered over a specific contact field to temporarily unblur it, allowing for personal data access without exposing the rest of the screen.
 
@@ -114,7 +114,7 @@ The architecture follows the Manifest V3 standard. The Content Script acts as th
 
 **Application Workflow:**
 
-![Workflow](docs/workflow.png)[text](../workflow.png.docx)
+![Workflow] [https://drive.google.com/file/d/12DKHfF_W7Nw4l1nTUoPNBC6Ota7H8sLI/view?usp=sharing]
 The workflow begins when a user opens a webpage. If the extension is enabled, the system initiates a DOM Scan for text nodes. If a Regex Pattern (Email, Phone, or CC) is matched, the text is wrapped in a custom HTML <span> and a CSS Blur Overlay is applied. The process remains active, listening for User Hover events to temporarily reveal text or maintaining the blur until the process ends
 
 ---
@@ -432,3 +432,4 @@ This project is licensed under the [LICENSE_NAME] License - see the [LICENSE](LI
 
 
 Made with ❤️ at TinkerHub
+
