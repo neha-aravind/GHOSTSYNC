@@ -1,0 +1,14 @@
+{
+  "manifest_version": 3,
+  "name": "GhostSync",
+  "version": "1.0",
+  "description": "Privacy-focused browser extension to blur sensitive data.",
+  "permissions": ["storage"],
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"],
+      "css": ["styles.css"]
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+/* This is the magic class we will apply to sensitive text */
+.ghost-sync-blur {
+    filter: blur(5px) !important; /* The '5px' is the strength of the blur */
+    transition: filter 0.3s ease; /* Makes it smooth when you hover */
+    background-color: rgba(0, 0, 0, 0.05); /* Adds a faint gray tint so you know it's protected */
+    border-radius: 4px;
+    padding: 2px 0;
+    display: inline;
+    cursor: help; /* Changes the mouse icon to a question mark on hover */
+}
+
+/* Optional: 'Hover to Reveal' - so YOU can still see the data if needed */
+.ghost-sync-blur:hover {
+    filter: blur(0px) !important;
+    background-color: transparent;
+}
